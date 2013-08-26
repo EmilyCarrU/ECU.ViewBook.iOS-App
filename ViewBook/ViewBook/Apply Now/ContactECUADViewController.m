@@ -64,11 +64,22 @@
             [mailer setSubject:@"Prospective student"];
             NSArray *toRecipients = [NSArray arrayWithObjects:@"tzpandaman@hotmail.com", @"jessecolinscott@gmail.com", nil];
             [mailer setToRecipients:toRecipients];
+<<<<<<< HEAD
+//            UIImage *myImage = [UIImage imageNamed:@"mobiletuts-logo.png"];
+//            NSData *imageData = UIImagePNGRepresentation(myImage);
+//            [mailer addAttachmentData:imageData mimeType:@"image/png" fileName:@"mobiletutsImage"];
+            NSString *nameMessage = [NSString stringWithFormat:@"Name of Prospective Student %@ %@\r", self.firstNameField.text,self.lastNameField.text];
+            NSString *questionMessage = [NSString stringWithFormat:@"Message: %@ %@\r", self.question.text, self.phoneField.text];
+            NSString *emailBody = [NSString stringWithFormat:@"%@ %@", nameMessage, questionMessage];
+            [mailer setMessageBody:emailBody isHTML:NO];
+            [self presentModalViewController:mailer animated:YES];
+=======
             NSString *nameMessage = [NSString stringWithFormat:@"Name of Prospective Student: %@ %@\r", self.firstNameField.text,self.lastNameField.text];
             NSString *questionMessage = [NSString stringWithFormat:@"Message: %@ %@\r", self.messageField.text, self.phoneField.text];
             NSString *emailBody = [NSString stringWithFormat:@"%@ %@", nameMessage, questionMessage];
             [mailer setMessageBody:emailBody isHTML:NO];
             [self presentViewController:mailer animated:YES completion:nil];
+>>>>>>> 7e274adb6178aa681ffbce9b1a0a1e6873653142
         }
         else {
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Failure"
