@@ -58,6 +58,11 @@
     
     [NSXmlParser setDelegate:xmlParser];
     
+<<<<<<< HEAD
+    [self.eventTimes addObject:@"Nov 21, 9AM, Montreal"];
+    [self.eventTimes addObject:@"Nov 22, 9AM, Boston"];
+    [self.eventTimes addObject:@"Nov 22, 2PM, New York"];
+=======
     BOOL success = [NSXmlParser parse];
     NSLog(@"Was The Parser Successful? ... %d", success);
     
@@ -67,6 +72,7 @@
         NSLog(@"This Is An Event: %@", event);
         [self.eventTimes addObject:event];
     }
+>>>>>>> 7e274adb6178aa681ffbce9b1a0a1e6873653142
     
     for (NSString *date in self.eventTimes) {
         NSLog(@"Final Array values: %@", date);
@@ -108,12 +114,16 @@
     calenderCell.textLabel.text = [self.eventTimes objectAtIndex:indexPath.row];
     
     //RX Creates button - tutorial: http://www.youtube.com/watch?v=TADTYkqF6q4
-    UIButton *saveButton = [[UIButton alloc]initWithFrame:CGRectMake(210, 10, 60, 40)];
+    UIButton *saveButton = [[UIButton alloc]initWithFrame:CGRectMake(250, 10, 60, 40)];
     [saveButton addTarget:self action:@selector(savePressed:) forControlEvents:UIControlEventTouchUpInside];
     [saveButton setBackgroundColor:[UIColor blackColor]];
     [saveButton setTitle:@"Save" forState:UIControlStateNormal];
 
+<<<<<<< HEAD
+    [calenderCell addSubview:saveButton];
+=======
     //[calenderCell addSubview:saveButton];
+>>>>>>> 7e274adb6178aa681ffbce9b1a0a1e6873653142
     [calenderCell setIndentationWidth:5];
     [calenderCell setIndentationLevel:2];
            

@@ -351,6 +351,8 @@
             <point key="canvasLocation" x="-656" y="72"/>
         </scene>
     </scenes>
+<<<<<<< HEAD
+=======
     <resources>
         <image name="creative_future.png" width="300" height="300"/>
         <image name="day_in_the_life.png" width="300" height="300"/>
@@ -405,6 +407,7 @@
             </relationships>
         </class>
     </classes>
+>>>>>>> 7e274adb6178aa681ffbce9b1a0a1e6873653142
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

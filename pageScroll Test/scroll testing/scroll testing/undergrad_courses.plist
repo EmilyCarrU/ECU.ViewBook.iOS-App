@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict/>
+<array>
+	<dict>
+		<key>course_name</key>
+		<string>COMMUNICATION DESIGN MAJOR</string>
+		<key>course_description</key>
+		<string>Communication Design focuses on developing comprehensible meaningful messages and experiences. The program emphasizes various study pathways, including information design, e-pub and publication design, interface design, interactivity for social and mobile media applications and motion graphics. Within these areas of specialization, students can further refine their interests by focusing on services
+and systems, typography and type design, wayfinding and exhibit design and other opportunities such as design for immersive environments and community engagement.
+</string>
+	</dict>
+	<dict>
+		<key>course_name</key>
+		<string>INDUSTRIAL DESIGN MAJOR</string>
+		<key>course_description</key>
+		<string>Industrial Design focuses on mediating human experience through the design of objects, systems, technology, environments, products and services, offering a rigorous program of hands-on study that emphasizes the understanding of human needs through exploration and prototyping in real time and space. Students can be generalists in this program, or they can focus their work on household products, recreational products, electronics, medical and health design, soft products, ceramics, exhibitions and furniture, as well as research in sustainability.and systems, typography and type design, wayfinding and exhibit design and other opportunities such as design for immersive environments and community engagement.
+</string>
+	</dict>
+	<dict>
+		<key>course_name</key>
+		<string>INTERACTION DESIGN MAJOR</string>
+		<key>course_description</key>
+		<string>Interaction Design fosters the integration and application of combined skills in both physical and digital environments to help shape the way we interact with artifacts, information and environments in everyday life. Through hands-on projects based on a range of iterative human-centred modeling methods, students can investigate deeply into interactive wearables and mobile devices, online services and automated systems, sensor-activated environments and social networks, and systems that enable a more sustainable future.</string>
+	</dict>
+</array>
 </plist>

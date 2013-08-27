@@ -186,6 +186,16 @@
 		2DF36C2D17C34402006B0994 /* studios_slideshow_05.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DF36C0317C34402006B0994 /* studios_slideshow_05.png */; };
 		2DF36C3017C346B7006B0994 /* WebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF36C2F17C346B7006B0994 /* WebViewViewController.m */; };
 		2DF36C3117C346B7006B0994 /* WebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF36C2F17C346B7006B0994 /* WebViewViewController.m */; };
+<<<<<<< HEAD
+		79676B2F17C74A7E00039CB9 /* ungrad_courses.plist in Resources */ = {isa = PBXBuildFile; fileRef = 79676B2E17C74A7E00039CB9 /* ungrad_courses.plist */; };
+		79676B3217C74AA700039CB9 /* UnderGradraduateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79676B3117C74AA700039CB9 /* UnderGradraduateViewController.m */; };
+		7991A88817C3BE7600505821 /* CalenderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7991A88717C3BE7600505821 /* CalenderCell.m */; };
+		7991A88C17C3C70100505821 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 7991A88917C3C70100505821 /* twitter.png */; };
+		7991A88D17C3C70100505821 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 7991A88A17C3C70100505821 /* facebook.png */; };
+		7991A88E17C3C70100505821 /* instagram.png in Resources */ = {isa = PBXBuildFile; fileRef = 7991A88B17C3C70100505821 /* instagram.png */; };
+		79B9F60817C49075005AA832 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79B9F60717C49074005AA832 /* MessageUI.framework */; };
+=======
+>>>>>>> 7e274adb6178aa681ffbce9b1a0a1e6873653142
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -327,6 +337,18 @@
 		2DF36C0317C34402006B0994 /* studios_slideshow_05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = studios_slideshow_05.png; sourceTree = "<group>"; };
 		2DF36C2E17C346B7006B0994 /* WebViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebViewViewController.h; path = "Start Points/WebViewViewController.h"; sourceTree = "<group>"; };
 		2DF36C2F17C346B7006B0994 /* WebViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebViewViewController.m; path = "Start Points/WebViewViewController.m"; sourceTree = "<group>"; };
+<<<<<<< HEAD
+		79676B2E17C74A7E00039CB9 /* ungrad_courses.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ungrad_courses.plist; sourceTree = "<group>"; };
+		79676B3017C74AA700039CB9 /* UnderGradraduateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnderGradraduateViewController.h; sourceTree = "<group>"; };
+		79676B3117C74AA700039CB9 /* UnderGradraduateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnderGradraduateViewController.m; sourceTree = "<group>"; };
+		7991A88617C3BE7600505821 /* CalenderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalenderCell.h; sourceTree = "<group>"; };
+		7991A88717C3BE7600505821 /* CalenderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalenderCell.m; sourceTree = "<group>"; };
+		7991A88917C3C70100505821 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
+		7991A88A17C3C70100505821 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
+		7991A88B17C3C70100505821 /* instagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = instagram.png; sourceTree = "<group>"; };
+		79B9F60717C49074005AA832 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+=======
+>>>>>>> 7e274adb6178aa681ffbce9b1a0a1e6873653142
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -406,6 +428,8 @@
 				2D29E76F17C0269D004BB03C /* MakePaths.storyboard */,
 				2D29E77217C026B7004BB03C /* MakePathsViewController.h */,
 				2D29E77317C026B7004BB03C /* MakePathsViewController.m */,
+				79676B3017C74AA700039CB9 /* UnderGradraduateViewController.h */,
+				79676B3117C74AA700039CB9 /* UnderGradraduateViewController.m */,
 			);
 			name = "Make Paths";
 			sourceTree = "<group>";
@@ -527,6 +551,13 @@
 		2D47AD2517921513003D5D8B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
+				79676B2E17C74A7E00039CB9 /* ungrad_courses.plist */,
+				7991A88917C3C70100505821 /* twitter.png */,
+				7991A88A17C3C70100505821 /* facebook.png */,
+				7991A88B17C3C70100505821 /* instagram.png */,
+=======
+>>>>>>> 7e274adb6178aa681ffbce9b1a0a1e6873653142
 				2D47AD2617921513003D5D8B /* ViewBook-Info.plist */,
 				2D47AD2717921513003D5D8B /* InfoPlist.strings */,
 				2D47AD2A17921513003D5D8B /* main.m */,
@@ -826,6 +857,12 @@
 				2DF36C2817C34402006B0994 /* studios_slideshow_03.png in Resources */,
 				2DF36C2A17C34402006B0994 /* studios_slideshow_04.png in Resources */,
 				2DF36C2C17C34402006B0994 /* studios_slideshow_05.png in Resources */,
+<<<<<<< HEAD
+				7991A88C17C3C70100505821 /* twitter.png in Resources */,
+				7991A88D17C3C70100505821 /* facebook.png in Resources */,
+				7991A88E17C3C70100505821 /* instagram.png in Resources */,
+				79676B2F17C74A7E00039CB9 /* ungrad_courses.plist in Resources */,
+=======
 				2D8957CE17C477920044F167 /* facebook.png in Resources */,
 				2D8957D217C477920044F167 /* twitter.png in Resources */,
 				2D8957D817C480CD0044F167 /* gplus.png in Resources */,
@@ -845,6 +882,7 @@
 				2D1D722417CB26EC00C3DBE3 /* giant_ant.png in Resources */,
 				2D1D722617CB26EC00C3DBE3 /* gnw_campus.png in Resources */,
 				2D1D722817CB26EC00C3DBE3 /* luke_parnell.png in Resources */,
+>>>>>>> 7e274adb6178aa681ffbce9b1a0a1e6873653142
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -960,11 +998,16 @@
 				2D9087B917C1FC70009DDDEB /* CampusSlideshowViewController.m in Sources */,
 				2DF36BEB17C3422E006B0994 /* StudentSlideshowViewController.m in Sources */,
 				2DF36C3017C346B7006B0994 /* WebViewViewController.m in Sources */,
+<<<<<<< HEAD
+				7991A88817C3BE7600505821 /* CalenderCell.m in Sources */,
+				79676B3217C74AA700039CB9 /* UnderGradraduateViewController.m in Sources */,
+=======
 				2D8957C817C474D90044F167 /* RecruitmentCalenderCell.m in Sources */,
 				2DAE88CD17C733190034B8C8 /* XMLParser.m in Sources */,
 				2DAE88D117C73C660034B8C8 /* RecruitmentEvent.m in Sources */,
 				2D44017B17CB1A2900F1079B /* GNWViewController.m in Sources */,
 				2D1D722C17CB27DF00C3DBE3 /* VideoThumbnailViewController.m in Sources */,
+>>>>>>> 7e274adb6178aa681ffbce9b1a0a1e6873653142
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
