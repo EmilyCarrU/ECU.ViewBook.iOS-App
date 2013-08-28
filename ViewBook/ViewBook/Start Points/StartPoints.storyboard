@@ -9,7 +9,7 @@
             <objects>
                 <viewController id="FHv-tt-ogo" userLabel="Start Points" customClass="StartPointsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2O0-HD-Tfk">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cbg-oH-hrc">
@@ -74,27 +74,51 @@
             <objects>
                 <viewController id="Ue7-Xb-H76" userLabel="Studios And Labs" customClass="StudiosSlideshowViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nu1-pi-DoC">
-                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="r42-X0-Ah8"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jem-ws-wAI">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="0fB-07-gTG"/>
+                                    <constraint firstAttribute="width" constant="249" id="ZSk-1R-YBE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="r42-X0-Ah8" firstAttribute="top" secondItem="Nu1-pi-DoC" secondAttribute="top" type="default" id="8iV-cd-flY"/>
                             <constraint firstItem="r42-X0-Ah8" firstAttribute="bottom" secondItem="Nu1-pi-DoC" secondAttribute="bottom" type="default" id="M8l-Gy-WvS"/>
                             <constraint firstItem="r42-X0-Ah8" firstAttribute="trailing" secondItem="Nu1-pi-DoC" secondAttribute="trailing" type="default" id="MrV-bo-bqD"/>
+                            <constraint firstAttribute="bottom" secondItem="jem-ws-wAI" secondAttribute="bottom" constant="34" id="mo9-6c-ptd"/>
                             <constraint firstItem="r42-X0-Ah8" firstAttribute="leading" secondItem="Nu1-pi-DoC" secondAttribute="leading" type="default" id="mr9-b4-cWH"/>
+                            <constraint firstItem="jem-ws-wAI" firstAttribute="leading" secondItem="Nu1-pi-DoC" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="smF-j4-JtX"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Studios" id="kwk-6t-48U"/>
                     <connections>
+                        <outlet property="caption" destination="jem-ws-wAI" id="CKa-c9-WAs"/>
+                        <outlet property="leftSwipe" destination="pKe-6Q-pBp" id="hs5-OI-2Q2"/>
+                        <outlet property="rightSwipe" destination="gBD-HD-0BM" id="Nlh-vf-xsH"/>
                         <outlet property="slideshow" destination="r42-X0-Ah8" id="JMy-ER-ioh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M20-Cl-QtK" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="gBD-HD-0BM"/>
-                <swipeGestureRecognizer direction="left" id="pKe-6Q-pBp"/>
+                <swipeGestureRecognizer direction="right" id="gBD-HD-0BM">
+                    <connections>
+                        <action selector="nextImage:" destination="Ue7-Xb-H76" id="c6g-tm-TUT"/>
+                        <outlet property="delegate" destination="Ue7-Xb-H76" id="8vQ-gk-tdn"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="pKe-6Q-pBp">
+                    <connections>
+                        <action selector="previousImage:" destination="Ue7-Xb-H76" id="JJr-MP-wqh"/>
+                        <outlet property="delegate" destination="Ue7-Xb-H76" id="eJE-0r-pcF"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1152" y="72"/>
         </scene>
@@ -103,7 +127,7 @@
             <objects>
                 <viewController id="4Gr-ym-wzi" userLabel="Students" customClass="StudentSlideshowViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bvf-wz-A0z">
-                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="fWG-C7-fRu"/>
@@ -156,7 +180,7 @@
             <objects>
                 <viewController id="G9d-7P-xPl" userLabel="Campus" customClass="CampusSlideshowViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CWw-Fz-bvL">
-                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="qLR-T1-biL"/>
@@ -230,7 +254,7 @@
             <objects>
                 <viewController id="OnM-45-lGv" userLabel="Thumbnails" customClass="VideoThumbnailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6ZV-V9-l6P">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTX-dL-J3Y">
@@ -362,7 +386,7 @@
             <objects>
                 <viewController id="J7J-0d-zEP" userLabel="Video Galleries" customClass="WebViewViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iGD-Fr-n9J">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kQq-Fc-pBc">
@@ -413,9 +437,64 @@
         <image name="giant_ant.png" width="300" height="300"/>
         <image name="luke_parnell.png" width="300" height="299"/>
     </resources>
+    <classes>
+        <class className="CampusSlideshowViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CampusSlideshowViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="caption" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="leftSwipe" candidateClass="UISwipeGestureRecognizer"/>
+                <relationship kind="outlet" name="rightSwipe" candidateClass="UISwipeGestureRecognizer"/>
+                <relationship kind="outlet" name="slideshow" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="StartPointsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/StartPointsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="loadMainMenuStoryboard:"/>
+            </relationships>
+        </class>
+        <class className="StudentSlideshowViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/StudentSlideshowViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="caption" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="leftSwipe" candidateClass="UISwipeGestureRecognizer"/>
+                <relationship kind="outlet" name="rightSwipe" candidateClass="UISwipeGestureRecognizer"/>
+                <relationship kind="outlet" name="slideshow" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="StudiosSlideshowViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/StudiosSlideshowViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="caption" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="leftSwipe" candidateClass="UISwipeGestureRecognizer"/>
+                <relationship kind="outlet" name="rightSwipe" candidateClass="UISwipeGestureRecognizer"/>
+                <relationship kind="outlet" name="slideshow" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="VideoThumbnailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/VideoThumbnailViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="launchCreativeFuture:"/>
+                <relationship kind="action" name="launchDayInTheLife:"/>
+                <relationship kind="action" name="launchDesignCommunity:"/>
+                <relationship kind="action" name="launchErinBoniferro:"/>
+                <relationship kind="action" name="launchGiantAnt:"/>
+                <relationship kind="action" name="launchLukeParnell:"/>
+            </relationships>
+        </class>
+        <class className="WebViewViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WebViewViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>

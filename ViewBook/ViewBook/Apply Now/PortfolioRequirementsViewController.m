@@ -44,10 +44,10 @@
     // Load Text File For Main Paragraph
     NSString *pathToTextFile = [[NSBundle mainBundle] pathForResource:@"PortfolioRequirements" ofType:@"txt"];
     NSString *fileContent = [NSString stringWithContentsOfFile:pathToTextFile encoding:NSUTF8StringEncoding error:NULL];
-    
+    self.mainParagraph.text = fileContent;
     // Set Text File To Main Paragraph Label
-    mainParagraph.numberOfLines = 15;
-    mainParagraph.text = fileContent;
+//    mainParagraph.numberOfLines = 15;
+//    mainParagraph.text = fileContent;
     
 }
 

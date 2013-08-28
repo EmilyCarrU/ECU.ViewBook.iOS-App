@@ -35,14 +35,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    // Set Gestures and load first image and caption
-    self.swipeCount=0;
-    [slideshow setImage:[self.students objectAtIndex:self.swipeCount]];
-    
-    [self.view addGestureRecognizer:self.leftSwipe];
-    [self.view addGestureRecognizer:self.rightSwipe];
-    self.caption.text=@"Hello";
-    self.caption.backgroundColor = [UIColor blueColor];
+   
     
     // Load Images
      self.students = [NSArray arrayWithObjects:
@@ -87,6 +80,16 @@
                         @"Ma Trees",
                         @"Ma Condos",
                         nil];
+    
+    
+    // Set Gestures and load first image and caption
+    self.swipeCount=0;
+    [slideshow setImage:[self.students objectAtIndex:self.swipeCount]];
+    
+    [self.view addGestureRecognizer:self.leftSwipe];
+    [self.view addGestureRecognizer:self.rightSwipe];
+    self.caption.text=@"Hello";
+    self.caption.backgroundColor = [UIColor blueColor];
     // Set ImageView
 //    [slideshow setAnimationImages:students];
 //    slideshow.animationDuration = 80.0;

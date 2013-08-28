@@ -17,9 +17,10 @@
 
 // Page Title
 @property (weak, nonatomic) IBOutlet UILabel *pageTitle;
+@property (weak, nonatomic) IBOutlet UITextView *mainParagraph;
 
 // Main Paragraph
-@property (weak, nonatomic) IBOutlet UILabel *mainParagraph;
+//@property (weak, nonatomic) IBOutlet UILabel *mainParagraph;
 
 
 @end

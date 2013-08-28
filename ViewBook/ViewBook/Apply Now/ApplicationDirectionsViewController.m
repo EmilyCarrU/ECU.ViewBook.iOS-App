@@ -46,7 +46,7 @@
     NSString *fileContent = [NSString stringWithContentsOfFile:pathToFile encoding:NSUTF8StringEncoding error:NULL];
     
     // Set Text File To Label
-    mainParagraph.numberOfLines = 15;
+//    mainParagraph.numberOfLines = 15;
     mainParagraph.text = fileContent;
     
 }

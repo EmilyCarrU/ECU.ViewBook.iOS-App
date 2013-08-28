@@ -103,26 +103,28 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Main Paragraph" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="CV8-C2-ePt">
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kpi-vQ-f47">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="126" id="cn1-ut-7YV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="CV8-C2-ePt" firstAttribute="top" secondItem="tei-e7-4LQ" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="CR7-vK-LHf"/>
-                            <constraint firstAttribute="bottom" secondItem="CV8-C2-ePt" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="PNT-Hu-f8d"/>
+                            <constraint firstAttribute="trailing" secondItem="Kpi-vQ-f47" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="6mi-Df-wTA"/>
+                            <constraint firstItem="Kpi-vQ-f47" firstAttribute="leading" secondItem="Ud3-v6-H6t" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Ezd-c7-1Kn"/>
+                            <constraint firstItem="Kpi-vQ-f47" firstAttribute="top" secondItem="Ud3-v6-H6t" secondAttribute="top" constant="179" id="Kv2-g5-yhR"/>
                             <constraint firstItem="tei-e7-4LQ" firstAttribute="top" secondItem="Ud3-v6-H6t" secondAttribute="top" constant="20" symbolic="YES" type="default" id="RaT-rT-iUw"/>
-                            <constraint firstAttribute="trailing" secondItem="CV8-C2-ePt" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="ffY-5A-qgj"/>
                             <constraint firstAttribute="trailing" secondItem="tei-e7-4LQ" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="gjH-Al-ePp"/>
-                            <constraint firstItem="CV8-C2-ePt" firstAttribute="leading" secondItem="Ud3-v6-H6t" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="mxo-U8-rO6"/>
                             <constraint firstItem="tei-e7-4LQ" firstAttribute="leading" secondItem="Ud3-v6-H6t" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="xUo-CY-NoJ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="F7o-m7-Qsv"/>
                     <connections>
-                        <outlet property="mainParagraph" destination="CV8-C2-ePt" id="QA6-r8-cHr"/>
+                        <outlet property="mainParagraph" destination="Kpi-vQ-f47" id="63B-5D-swH"/>
                         <outlet property="pageTitle" destination="tei-e7-4LQ" id="2GQ-zC-Pbr"/>
                     </connections>
                 </viewController>
@@ -243,26 +245,28 @@
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="24"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Main Paragraph" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="yHf-bB-Klo">
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o0r-L9-YIY">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="126" id="Qfe-3S-z3y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="o0r-L9-YIY" firstAttribute="leading" secondItem="87j-2J-WYs" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="38v-9N-iPC"/>
                             <constraint firstItem="7W5-Zl-m96" firstAttribute="leading" secondItem="87j-2J-WYs" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="3gt-qM-xyt"/>
-                            <constraint firstItem="yHf-bB-Klo" firstAttribute="leading" secondItem="87j-2J-WYs" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="7qY-fl-cU1"/>
+                            <constraint firstItem="o0r-L9-YIY" firstAttribute="top" secondItem="87j-2J-WYs" secondAttribute="top" constant="163" id="4YF-rH-tTR"/>
+                            <constraint firstAttribute="trailing" secondItem="o0r-L9-YIY" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="G9A-Qn-vFX"/>
                             <constraint firstAttribute="trailing" secondItem="7W5-Zl-m96" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Zql-qP-PQ0"/>
-                            <constraint firstAttribute="bottom" secondItem="yHf-bB-Klo" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="d1h-ti-1x7"/>
-                            <constraint firstItem="yHf-bB-Klo" firstAttribute="top" secondItem="7W5-Zl-m96" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="ecd-gS-E3Y"/>
                             <constraint firstItem="7W5-Zl-m96" firstAttribute="top" secondItem="87j-2J-WYs" secondAttribute="top" constant="20" symbolic="YES" type="default" id="i3M-v5-ykm"/>
-                            <constraint firstAttribute="trailing" secondItem="yHf-bB-Klo" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="ju6-q2-sqX"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xgy-Ix-GEo"/>
                     <connections>
-                        <outlet property="mainParagraph" destination="yHf-bB-Klo" id="sf5-u3-nYE"/>
+                        <outlet property="mainParagraph" destination="o0r-L9-YIY" id="oLR-rG-MCK"/>
                         <outlet property="pageTitle" destination="7W5-Zl-m96" id="jN5-IY-bTL"/>
                     </connections>
                 </viewController>
@@ -293,7 +297,8 @@
         <class className="ApplicationDirectionsViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ApplicationDirectionsViewController.h"/>
             <relationships>
-                <relationship kind="outlet" name="mainParagraph" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="mainParagraoh" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="mainParagraph" candidateClass="UITextView"/>
                 <relationship kind="outlet" name="pageTitle" candidateClass="UILabel"/>
             </relationships>
         </class>
@@ -319,7 +324,7 @@
         <class className="PortfolioRequirementsViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PortfolioRequirementsViewController.h"/>
             <relationships>
-                <relationship kind="outlet" name="mainParagraph" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="mainParagraph" candidateClass="UITextView"/>
                 <relationship kind="outlet" name="pageTitle" candidateClass="UILabel"/>
             </relationships>
         </class>
