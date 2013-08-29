@@ -63,9 +63,7 @@
 		2D44017017CAE06A00F1079B /* pinterest.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D44016D17CAE06A00F1079B /* pinterest.png */; };
 		2D44017117CAE06A00F1079B /* pinterest.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D44016D17CAE06A00F1079B /* pinterest.png */; };
 		2D44017517CAEC4600F1079B /* LeituraHeadline-Serif It.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2D44017317CAEC4600F1079B /* LeituraHeadline-Serif It.otf */; };
-		2D44017617CAEC4600F1079B /* LeituraHeadline-Serif It.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2D44017317CAEC4600F1079B /* LeituraHeadline-Serif It.otf */; };
 		2D44017717CAEC4600F1079B /* LeituraSans-Grot 1.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2D44017417CAEC4600F1079B /* LeituraSans-Grot 1.otf */; };
-		2D44017817CAEC4600F1079B /* LeituraSans-Grot 1.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2D44017417CAEC4600F1079B /* LeituraSans-Grot 1.otf */; };
 		2D44017B17CB1A2900F1079B /* GNWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D44017A17CB1A2900F1079B /* GNWViewController.m */; };
 		2D44017C17CB1A2900F1079B /* GNWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D44017A17CB1A2900F1079B /* GNWViewController.m */; };
 		2D47AD1F17921513003D5D8B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D47AD1E17921513003D5D8B /* UIKit.framework */; };
@@ -959,8 +957,6 @@
 				2D142B0D17C48AE80013F036 /* BuildNetworksScreenNames.plist in Resources */,
 				2D44016F17CAE06A00F1079B /* flickr.png in Resources */,
 				2D44017117CAE06A00F1079B /* pinterest.png in Resources */,
-				2D44017617CAEC4600F1079B /* LeituraHeadline-Serif It.otf in Resources */,
-				2D44017817CAEC4600F1079B /* LeituraSans-Grot 1.otf in Resources */,
 				2D1D721317CB21A300C3DBE3 /* CreateFuturesScreenNames.plist in Resources */,
 				2D1D721D17CB26EC00C3DBE3 /* creative_future.png in Resources */,
 				2D1D721F17CB26EC00C3DBE3 /* day_in_the_life.png in Resources */,
