@@ -1,218 +1,326 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="JNn-gM-O8y">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="aca-O6-fGZ">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--Make Paths-->
-        <scene sceneID="CF3-el-5uf">
-            <objects>
-                <viewController id="Tpa-3o-fPF" userLabel="Make Paths" customClass="MakePathsViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="y6z-Uo-wD6">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v6a-IF-RUB">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="back">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="loadMainMenuStoryboard:" destination="Tpa-3o-fPF" eventType="touchUpInside" id="iqg-9y-rPP"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1fk-Ar-NH5">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Undergraduate">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="3D2-5z-qmG" kind="push" id="i3X-Ma-WQ7"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLb-9f-GjB">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Graduate">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="tGG-JI-bp1" kind="push" id="W3F-Vy-9oN"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OWZ-nr-c4R">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Continuing Studies">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Aai-6P-Joa" kind="push" id="wPa-CV-zfx"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="lLb-9f-GjB" firstAttribute="trailing" secondItem="1fk-Ar-NH5" secondAttribute="trailing" type="default" id="2c9-oh-JUM"/>
-                            <constraint firstItem="1fk-Ar-NH5" firstAttribute="top" secondItem="y6z-Uo-wD6" secondAttribute="top" constant="97" id="4eb-qd-196"/>
-                            <constraint firstItem="lLb-9f-GjB" firstAttribute="trailing" secondItem="OWZ-nr-c4R" secondAttribute="trailing" type="default" id="9PE-bm-Kem"/>
-                            <constraint firstItem="v6a-IF-RUB" firstAttribute="leading" secondItem="y6z-Uo-wD6" secondAttribute="leading" type="default" id="Kta-HU-p0X"/>
-                            <constraint firstItem="OWZ-nr-c4R" firstAttribute="leading" secondItem="lLb-9f-GjB" secondAttribute="leading" type="default" id="Ncg-Ai-1sg"/>
-                            <constraint firstItem="lLb-9f-GjB" firstAttribute="top" secondItem="y6z-Uo-wD6" secondAttribute="top" constant="187" id="Z7Y-Ud-p3P"/>
-                            <constraint firstAttribute="bottom" secondItem="OWZ-nr-c4R" secondAttribute="bottom" constant="176" id="ZwS-s6-X3N"/>
-                            <constraint firstItem="v6a-IF-RUB" firstAttribute="top" secondItem="y6z-Uo-wD6" secondAttribute="top" type="default" id="bno-vi-RWI"/>
-                            <constraint firstItem="1fk-Ar-NH5" firstAttribute="centerX" secondItem="y6z-Uo-wD6" secondAttribute="centerX" type="default" id="mrA-Ng-Ne0"/>
-                            <constraint firstItem="lLb-9f-GjB" firstAttribute="leading" secondItem="1fk-Ar-NH5" secondAttribute="leading" type="default" id="zjg-0D-f8h"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="wSH-Kg-Adf"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FJh-Qy-aPr" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-277" y="62"/>
-        </scene>
         <!--Undergraduate-->
         <scene sceneID="F5R-rs-Akg">
             <objects>
-                <viewController id="3D2-5z-qmG" userLabel="Undergraduate" sceneMemberID="viewController">
+                <viewController id="3D2-5z-qmG" userLabel="Undergraduate" customClass="UnderGradraduateViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ccx-JF-Kbx">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="OhS-vL-0wQ">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="120" id="hC3-er-BLb"/>
-                                </constraints>
-                                <string key="text">Bachelor of Design
-Bachelor of Media Arts
-Bachelor of Visual Arts</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eeG-W8-1xW">
+                                <rect key="frame" x="-6" y="10" width="267" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="back:" destination="3D2-5z-qmG" eventType="touchUpInside" id="CrQ-ev-kb9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fz6-qF-IUx">
+                                <rect key="frame" x="45" y="70" width="230" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="hk5-eD-RP6">
+                                <rect key="frame" x="37" y="111" width="246" height="326"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="OhS-vL-0wQ" firstAttribute="centerY" secondItem="ccx-JF-Kbx" secondAttribute="centerY" type="default" id="0sM-Ch-DTo"/>
-                            <constraint firstItem="OhS-vL-0wQ" firstAttribute="leading" secondItem="ccx-JF-Kbx" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="gcp-iO-skl"/>
-                            <constraint firstAttribute="trailing" secondItem="OhS-vL-0wQ" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="lqi-v1-h9S"/>
-                        </constraints>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="pOp-lZ-eiP" appends="YES" id="lff-cg-L4C"/>
+                            <outletCollection property="gestureRecognizers" destination="8VV-bf-x4c" appends="YES" id="R1D-3n-2sx"/>
+                        </connections>
                     </view>
+                    <tabBarItem key="tabBarItem" title="UnderGrad" id="Ip7-TS-7Qd"/>
                     <navigationItem key="navigationItem" id="ApR-PX-fSa"/>
+                    <connections>
+                        <outlet property="courseDescription" destination="hk5-eD-RP6" id="lsF-2t-tib"/>
+                        <outlet property="courseTitle" destination="fz6-qF-IUx" id="pa0-uB-FOc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SzL-JH-KV1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="pOp-lZ-eiP">
+                    <connections>
+                        <action selector="nextCourse:" destination="3D2-5z-qmG" id="5uA-38-BU1"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="8VV-bf-x4c">
+                    <connections>
+                        <action selector="previousCourse:" destination="3D2-5z-qmG" id="6pV-bw-n8f"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="569" y="-649"/>
+            <point key="canvasLocation" x="569" y="-579"/>
+        </scene>
+        <!--Foundation View Controller - Foundation-->
+        <scene sceneID="Kar-Sh-29E">
+            <objects>
+                <viewController id="8is-Q7-8q9" customClass="FoundationViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="S9e-J2-3du">
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5CJ-u2-q2U">
+                                <rect key="frame" x="-16" y="12" width="267" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="back:" destination="8is-Q7-8q9" eventType="touchUpInside" id="jlF-eo-rOd"/>
+                                    <action selector="back:" destination="3D2-5z-qmG" eventType="touchUpInside" id="kHf-vs-Mm3"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Skr-9e-nEb">
+                                <rect key="frame" x="35" y="72" width="230" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="YFa-Dp-ztq">
+                                <rect key="frame" x="27" y="113" width="246" height="326"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Foundation" id="mvV-Yl-xiB"/>
+                    <connections>
+                        <outlet property="courseDescription" destination="YFa-Dp-ztq" id="cLp-Sh-EUU"/>
+                        <outlet property="courseTitle" destination="Skr-9e-nEb" id="hKa-iu-Xng"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GEL-9c-iNF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="569" y="-1224"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="vZc-DV-rjG">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="aca-O6-fGZ" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Val-zE-ADr">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="8is-Q7-8q9" kind="relationship" relationship="viewControllers" id="vcn-uy-B75"/>
+                        <segue destination="3D2-5z-qmG" kind="relationship" relationship="viewControllers" id="Jew-bb-fyC"/>
+                        <segue destination="tGG-JI-bp1" kind="relationship" relationship="viewControllers" id="45l-Hb-KF0"/>
+                        <segue destination="Aai-6P-Joa" kind="relationship" relationship="viewControllers" id="2vN-4v-z6S"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zD2-6x-IBA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-114" y="-331"/>
         </scene>
         <!--Graduate-->
         <scene sceneID="gv9-gS-Ckf">
             <objects>
-                <viewController id="tGG-JI-bp1" userLabel="Graduate" sceneMemberID="viewController">
+                <viewController id="tGG-JI-bp1" userLabel="Graduate" customClass="GraduateViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K55-hG-gkF">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="UVw-6i-ocB">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="120" id="w6M-3o-H2t"/>
-                                </constraints>
-                                <string key="text">Master of Design
-Master of Applied Arts
-Master of Digital Media</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oLA-Ke-ZXM">
+                                <rect key="frame" x="45" y="75" width="230" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="1MB-If-uNG">
+                                <rect key="frame" x="40" y="124" width="240" height="310"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EB0-hG-kzW">
+                                <rect key="frame" x="-16" y="13" width="267" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="back:" destination="tGG-JI-bp1" eventType="touchUpInside" id="O4E-sb-l4G"/>
+                                    <action selector="back:" destination="3D2-5z-qmG" eventType="touchUpInside" id="Sku-lQ-DkR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="UVw-6i-ocB" firstAttribute="leading" secondItem="K55-hG-gkF" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="IB5-7A-ZAa"/>
-                            <constraint firstItem="UVw-6i-ocB" firstAttribute="centerY" secondItem="K55-hG-gkF" secondAttribute="centerY" type="default" id="Wuo-A6-Vej"/>
-                            <constraint firstAttribute="trailing" secondItem="UVw-6i-ocB" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="eYA-ao-Kug"/>
-                        </constraints>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="9az-0J-rYF" appends="YES" id="Qxj-tN-mc0"/>
+                            <outletCollection property="gestureRecognizers" destination="VsD-cE-wh6" appends="YES" id="jXT-uB-MuI"/>
+                        </connections>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Graduate" id="0rY-yC-TD6"/>
                     <navigationItem key="navigationItem" id="B5x-if-0BB"/>
+                    <connections>
+                        <outlet property="courseDescription" destination="1MB-If-uNG" id="qoy-wM-NqN"/>
+                        <outlet property="courseTitle" destination="oLA-Ke-ZXM" id="BWM-mT-SyF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FY8-BB-CIS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="9az-0J-rYF">
+                    <connections>
+                        <action selector="nextCourse:" destination="tGG-JI-bp1" id="t1R-8e-iV9"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="VsD-cE-wh6">
+                    <connections>
+                        <action selector="previousCourse:" destination="tGG-JI-bp1" id="C1M-tR-ya3"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="569" y="62"/>
+            <point key="canvasLocation" x="569" y="68"/>
         </scene>
         <!--Continuing Studies-->
         <scene sceneID="yWI-s3-NhV">
             <objects>
-                <viewController id="Aai-6P-Joa" userLabel="Continuing Studies" sceneMemberID="viewController">
+                <viewController id="Aai-6P-Joa" userLabel="Continuing Studies" customClass="ContinuingStudiesViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4xg-w9-avW">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="V7g-on-RCp">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="120" id="L61-te-Ut1"/>
-                                </constraints>
-                                <string key="text">Design Essentials
-IDX Essentials
-Welcome Lab
-Summer Teen Institute</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hOw-eY-6u7">
+                                <rect key="frame" x="41" y="72" width="230" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="9Qu-zA-63a">
+                                <rect key="frame" x="36" y="121" width="240" height="310"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JKh-AB-dkf">
+                                <rect key="frame" x="-17" y="11" width="267" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="back:" destination="tGG-JI-bp1" eventType="touchUpInside" id="H6N-QT-FWy"/>
+                                    <action selector="back:" destination="3D2-5z-qmG" eventType="touchUpInside" id="XGb-rN-4KL"/>
+                                    <action selector="back:" destination="Aai-6P-Joa" eventType="touchUpInside" id="jm0-xQ-loA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="V7g-on-RCp" firstAttribute="centerY" secondItem="4xg-w9-avW" secondAttribute="centerY" type="default" id="6rr-Px-wdC"/>
-                            <constraint firstItem="V7g-on-RCp" firstAttribute="leading" secondItem="4xg-w9-avW" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="ecV-Nd-xdx"/>
-                            <constraint firstAttribute="trailing" secondItem="V7g-on-RCp" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="gIY-qh-vEO"/>
-                        </constraints>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="SqL-hO-Amj" appends="YES" id="bHA-pr-Ozv"/>
+                            <outletCollection property="gestureRecognizers" destination="u0k-sO-zPv" appends="YES" id="941-KQ-Og3"/>
+                        </connections>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Continuing Studies" id="NCZ-LI-nkG"/>
                     <navigationItem key="navigationItem" id="gAf-Ok-6oY"/>
+                    <connections>
+                        <outlet property="courseDescription" destination="9Qu-zA-63a" id="2Cd-Fp-eO5"/>
+                        <outlet property="courseTitle" destination="hOw-eY-6u7" id="sE6-TD-vtA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UZH-q6-8DE" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="569" y="772"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="BAb-2y-4FB">
-            <objects>
-                <navigationController id="JNn-gM-O8y" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2jK-tc-ext">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
+                <swipeGestureRecognizer direction="left" id="SqL-hO-Amj">
                     <connections>
-                        <segue destination="Tpa-3o-fPF" kind="relationship" relationship="rootViewController" id="Nth-YR-euU"/>
+                        <action selector="nextCourse:" destination="Aai-6P-Joa" id="dPx-Qw-1ZL"/>
                     </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="R2g-0P-py9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="u0k-sO-zPv">
+                    <connections>
+                        <action selector="previousCourse:" destination="Aai-6P-Joa" id="2b9-9x-3Tu"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-803" y="62"/>
+            <point key="canvasLocation" x="569" y="714"/>
         </scene>
     </scenes>
     <classes>
-        <class className="MakePathsViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MakePathsViewController.h"/>
+        <class className="ContinuingStudiesViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ContinuingStudiesViewController.h"/>
             <relationships>
-                <relationship kind="action" name="loadMainMenuStoryboard:"/>
+                <relationship kind="action" name="back:"/>
+                <relationship kind="action" name="nextCourse:" candidateClass="UISwipeGestureRecognizer"/>
+                <relationship kind="action" name="previousCourse:" candidateClass="UISwipeGestureRecognizer"/>
+                <relationship kind="outlet" name="courseDescription" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="courseTitle" candidateClass="UILabel"/>
             </relationships>
         </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        <class className="FoundationViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FoundationViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="back:"/>
+                <relationship kind="outlet" name="courseDescription" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="courseTitle" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="GraduateViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GraduateViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="back:"/>
+                <relationship kind="action" name="nextCourse:" candidateClass="UISwipeGestureRecognizer"/>
+                <relationship kind="action" name="previousCourse:" candidateClass="UISwipeGestureRecognizer"/>
+                <relationship kind="outlet" name="courseDescription" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="courseTitle" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="UnderGradraduateViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UnderGradraduateViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="back:"/>
+                <relationship kind="action" name="nextCourse:" candidateClass="UISwipeGestureRecognizer"/>
+                <relationship kind="action" name="previousCourse:" candidateClass="UISwipeGestureRecognizer"/>
+                <relationship kind="outlet" name="courseDescription" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="courseTitle" candidateClass="UILabel"/>
+            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

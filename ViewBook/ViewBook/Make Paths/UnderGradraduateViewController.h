@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface UnderGradraduateViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *courseTitle;
+@property (weak, nonatomic) IBOutlet UITextView *courseDescription;
 
 @end

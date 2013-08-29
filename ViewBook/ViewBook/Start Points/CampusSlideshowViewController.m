@@ -65,15 +65,9 @@
     self.caption.text=@"Hello";
     self.caption.backgroundColor = [UIColor blueColor];
 
-    // Set ImageView
-//    [slideshow setAnimationImages:campus];
-//    slideshow.animationDuration = 30.0;
-//    slideshow.animationRepeatCount = 0;
-//    [slideshow startAnimating];
-
     
 }
-- (IBAction)nextImage:(UISwipeGestureRecognizer *)sender {
+- (IBAction)previousImage:(UISwipeGestureRecognizer *)sender {
     NSLog(@"left swipe");
     if(self.swipeCount < self.campus.count-1){
         NSLog(@"swipe count: %i  |*| array count: %i",self.swipeCount,self.campus.count-1);
@@ -83,7 +77,7 @@
     }
 }
 
-- (IBAction)previousImage:(UISwipeGestureRecognizer *)sender {
+- (IBAction)nextImage:(UISwipeGestureRecognizer *)sender {
     NSLog(@"right swipe");
     if(self.swipeCount >0){
         NSLog(@"swipe count: %i  |*| array count: %i",self.swipeCount,self.campus.count-1);

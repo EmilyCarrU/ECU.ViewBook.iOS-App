@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<array/>
+<array>
+	<string>Bachelor of Design</string>
+	<string>COMMUNICATION DESIGN MAJOR</string>
+	<string>INDUSTRIAL DESIGN MAJOR</string>
+	<string>INTERACTION DESIGN MAJOR</string>
+	<string>Bachelor of Media Arts</string>
+	<string>ANIMATION MAJOR</string>
+	<string>INTERACTIVE + SOCIAL MEDIA ARTS MAJOR</string>
+	<string>Bachelor of Fine Arts</string>
+	<string>CRITICAL + CULTURAL PRACTICE MAJOR</string>
+	<string>FILM, VIDEO + INTEGRATED MEDIA MAJOR</string>
+	<string>ILLUSTRATION MAJOR</string>
+	<string>PHOTOGRAPHY MAJOR</string>
+	<string>VISUAL ART MAJOR</string>
+	<string>CERAMICS </string>
+	<string>DRAWING </string>
+	<string>PAINTING </string>
+	<string>PRINT MEDIA </string>
+	<string>SCULPTURE </string>
+	<string>North Island College</string>
+	<string>GENERAL FINE ARTS MAJOR</string>
+	<string>Minors</string>
+	<string>ART + TEXT MINOR</string>
+	<string>CURATORIAL PRACTICES MINOR</string>
+	<string>SOCIAL PRACTICE AND COMMUNITY ENGAGEMENT MINOR</string>
+</array>
 </plist>
